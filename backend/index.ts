@@ -1,0 +1,10 @@
+import 'dotenv/config'
+import Koa from 'koa'
+
+const app = new Koa();
+
+const PORT = process.env.PORT || 5000
+
+app.listen(PORT, () => {
+    console.log(`Server started at port: ${PORT}`)
+})
