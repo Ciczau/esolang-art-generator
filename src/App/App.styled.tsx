@@ -5,6 +5,9 @@ export const Wrapper = styled.div`
   display: flex;
   flex-direction: column;
   align-items: center;
+  overflow-x: hidden;
+  padding-top: 20px;
+  gap: 20px;
 `;
 
 export const Button = styled.button`
@@ -24,19 +27,20 @@ export const Button = styled.button`
   }
 `;
 
-export const Menu = styled.div`
-  width: 600px;
-  max-width: 100%;
-  padding: 20px;
-  display: flex;
-  justify-content: center;
-  gap: 30px;
-`;
-
 export const Textarea = styled.textarea`
   width: 600px;
   max-width: 100%;
+  padding: 5px;
   margin-bottom: 15px;
   font-size: 17px;
   resize: none;
+`;
+
+export const Hint = styled.div`
+  padding: 10px;
+  width: 600px;
+  font-size: 15px;
+  border: 1px dotted black;
+  background-color: #e0e0e0;
+  border-radius: 10px;
 `;
